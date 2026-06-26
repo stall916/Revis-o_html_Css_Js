@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechLoja Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>💻 TechLoja Pro</h1>
+<p>Sua loja de tecnologia</p>
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="busca"
+placeholder="Buscar produtos..."
+onkeyup="filtrarProdutos()">
+
+</div>
+
+<div class="cart-info">
+
+🛒 <span id="qtd">0</span>
+
+</div>
+
+</header>
+
+<section class="banner">
+
+<div class="banner-content">
+
+<h2>Ofertas Imperdíveis</h2>
+
+<p>
+Os melhores produtos gamers com os melhores preços.
+</p>
+
+<button>Comprar Agora</button>
+
+</div>
+
+</section>
+
+<main>
+
+<h2 class="titulo">
+Produtos em Destaque
+</h2>
+
+<section id="grid-produtos">
+
+</section>
+
+</main>
+
+<div id="modalCarrinho" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="fecharCarrinho()">
+&times;
+</span>
+
+<h2>Meu Carrinho</h2>
+
+<div id="listaCarrinho">
+
+</div>
+
+<h3>
+Total: R$
+<span id="totalCarrinho">0.00</span>
+</h3>
+
+<button onclick="finalizarCompra()">
+Finalizar Compra
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 TechLoja Pro - Desenvolvido por João Batista
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
